@@ -1,0 +1,177 @@
+html {
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    @media screen and (max-width: 768px){
+        font-size: 12px;
+        margin:0px;
+        padding:0px;
+        box-sizing:border-box;
+    }
+}
+
+#Header1 {
+    color: rgb(255, 255, 255);
+    position: fixed;
+    display: flex;
+    scroll-behavior: smooth;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    min-height: 100px;
+    padding-top: 55px;
+    padding-left: 30px;
+
+    opacity: 0.8;
+    z-index: 1;
+    @media screen and (max-width: 768px) {
+        color: rgb(255, 255, 255);
+        position: fixed;
+        display: flex;
+        scroll-behavior: smooth;
+        background-color: black;
+        width: 100%;
+        min-height: 50px;
+        padding-top: 40px;
+        padding-left: 30px;
+        opacity: 1;
+        z-index: 1;
+    }
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+    width: 100%;
+    margin-left: 0%;
+    padding-left: 0%;
+    height: 30px;    
+    padding: 0px;
+    margin: 0px;
+}
+
+#body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-size: contain;
+    background-image: url("/images/bg1.jpg");
+    background-repeat: no-repeat;
+
+    @media screen and (max-width: 768px) {
+        background-color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: url("/images/bg1.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+}
+
+#HeaderDiv1 {
+    color: rgb(0, 0, 0);
+}
+
+#Header1 {
+    padding-top: -70px;
+}
+
+#Head1 {
+    padding-top: 170px;
+    font-size: 56px;
+    color: rgb(0, 0, 0);
+    flex-direction: column;
+
+    @media screen and (max-width: 768px) {
+        padding-top: 100px;
+        font-size: 25px;
+        color: white;
+        flex-direction: column;
+    }
+}
+
+#moto {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(219, 228, 236);
+    font-size: 30px;
+    padding-top: 190px;
+}
+
+section {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    @media screen and (max-width: 768px) {
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+.scroll-down {
+    height: 50px;
+    width: 20px;
+    border: 2px solid black;
+    color: aliceblue;
+    position: absolute;
+    left:50%;
+    cursor: pointer;
+    padding-bottom: 0%;
+    background-color: aliceblue;
+}
+
+.scroll::before{
+    
+}
+
+.scroll::after{
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    border: 2px solid black;
+    height: 10px;
+    width: 10px;
+}
+
+#sec-1 {
+    position: relative;
+}
+
+#sec-2 {
+    background-color: aliceblue;
+    background-image: url("https://raw.githubusercontent.com/snarkyidiot/snarkyidiot.github.io/main/assets/img/diego-gennaro-RSvJQ-IP_pk-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 100vh;
+}
+
+#Github {
+    font-size: 30px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0px;
+    border-radius: 140px;
+    cursor:pointer;
+    height: 50px;
+    width: 170px;
+}
+
+#github-link {
+    border: 0ch;
+    padding: 0px;
+    justify-items: flex-end;
+}
